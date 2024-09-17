@@ -12,7 +12,7 @@ header {
 
 h1 {
     color: black;
-    font-family: 'Balloon', cursive; /* Ensure 'Balloon' font is available or choose an alternative */
+    font-family: 'Balloon', cursive; /* Balloon font for the title */
     margin: 0;
     text-transform: uppercase; /* Make text all uppercase */
 }
@@ -45,9 +45,17 @@ h1 {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
+/* Media query for desktop view */
+@media (min-width: 769px) {
+    .image-item {
+        width: 30vw; /* 30% of the viewport width for desktops */
+    }
+}
+
+/* Media query for mobile view */
 @media (max-width: 768px) {
     .image-item {
-        width: 40vw; /* Increase width on smaller screens to accommodate fewer images per row */
+        width: 45vw; /* Increase width on smaller screens */
     }
     .image-gallery {
         flex-direction: column;
