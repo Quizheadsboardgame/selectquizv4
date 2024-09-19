@@ -7,11 +7,46 @@
     <link rel="stylesheet" href="styles.css">
     <!-- Link to Balloon font -->
     <link href="https://fonts.googleapis.com/css2?family=Balloon:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Balloon', sans-serif;
+            background-image: url('https://i.imgur.com/EvjDN7G.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .image-item img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>ALL QUIZZES</h1>
-    </header>
     <div class="image-gallery">
         <a href="https://quizheadsboardgame.github.io/Horrorquizv4/" class="image-item">
             <img src="https://i.imgur.com/b5oxAMh.png" alt="Horror Quiz">
