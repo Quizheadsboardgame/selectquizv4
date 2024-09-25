@@ -1,177 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Quizzes</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Link to Balloon font -->
-    <link href="https://fonts.googleapis.com/css2?family=Balloon:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Balloon', sans-serif;
-            background-image: url('https://i.imgur.com/EvjDN7G.png');
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            min-height: 100vh;
-        }
+/* Make the background transparent */
+body {
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
-        .image-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 10px;
-            width: 90%;
-            max-width: 1200px;
-        }
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
 
-        .image-item img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.2s ease-in-out;
-        }
+/* Style each image to appear lifted with shadow */
+.image {
+    width: 300px;
+    height: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow to create a "lifted" look */
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
 
-        .image-item img:hover {
-            transform: scale(1.05);
-        }
-
-        a {
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="image-gallery">
-        <a href="https://quizheadsboardgame.github.io/Horrorquizv4/" class="image-item">
-            <img src="https://i.imgur.com/b5oxAMh.png" alt="Horror Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/TaylorSwiftQuizv3/" class="image-item">
-            <img src="https://i.imgur.com/ioPzU6j.png" alt="Taylor Swift Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/iconicmoviesv3/" class="image-item">
-            <img src="https://i.imgur.com/09bbnYp.png" alt="Iconic Movies Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/AEWv2/" class="image-item">
-            <img src="https://i.imgur.com/gGOAenD.png" alt="AEW Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/wwequizv2/" class="image-item">
-            <img src="https://i.imgur.com/Kxac95Y.png" alt="WWE Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/georgemichealv2/" class="image-item">
-            <img src="https://i.imgur.com/Ba0wMT8.png" alt="George Michael Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/transformersquizv2/" class="image-item">
-            <img src="https://i.imgur.com/XhwUpeq.png" alt="Transformers Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/HarryPotterv2/" class="image-item">
-            <img src="https://i.imgur.com/J3OIvZt.png" alt="Harry Potter Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/ClassicHollywoodMoviesv2/" class="image-item">
-            <img src="https://i.imgur.com/nOaemXZ.png" alt="Classic Hollywood Movies Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/StarWarsQuizv4/" class="image-item">
-            <img src="https://i.imgur.com/ncuuRyP.png" alt="Star Wars Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/Animatedmoviesv2/" class="image-item">
-            <img src="https://i.imgur.com/ikVOSPJ.png" alt="Animated Movies Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/StreamingORIGNALSV3/" class="image-item">
-            <img src="https://i.imgur.com/OOnO7zj.png" alt="Streaming Originals Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/foreignV1/" class="image-item">
-            <img src="https://i.imgur.com/uYAO29v.png" alt="Foreign Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/SuperherosBlockbustersV3/" class="image-item">
-            <img src="https://i.imgur.com/STQJLCC.png" alt="Superheroes Blockbusters Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/cultclassicv2/" class="image-item">
-            <img src="https://i.imgur.com/P4C9K84.png" alt="Cult Classics Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/mustwatchtvv2/" class="image-item">
-            <img src="https://i.imgur.com/0VHikkE.png" alt="Must Watch TV Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/iconic90stvV2/" class="image-item">
-            <img src="https://i.imgur.com/sRXWFyp.png" alt="Iconic 90s TV Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/CultTvv2/" class="image-item">
-            <img src="https://i.imgur.com/9yoUTqk.png" alt="Cult TV Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/hiphopv1/" class="image-item">
-            <img src="https://i.imgur.com/78alVrU.png" alt="Hip Hop Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/hitmusicv1/" class="image-item">
-            <img src="https://i.imgur.com/V3X11VJ.png" alt="Hit Music Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/popmusicv1/" class="image-item">
-            <img src="https://i.imgur.com/5iojhQQ.png" alt="Pop Music Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/rocklegendsquizv2/" class="image-item">
-            <img src="https://i.imgur.com/Oi7MEDz.png" alt="Rock Legends Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/80smusicquizv2/" class="image-item">
-            <img src="https://i.imgur.com/NXIYM6L.png" alt="80s Music Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/Altenativemusicv2/" class="image-item">
-            <img src="https://i.imgur.com/JQFXsaJ.png" alt="Alternative Music Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/oasisquizv2/" class="image-item">
-            <img src="https://i.imgur.com/A1YnwNG.png" alt="Oasis Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/uksportchampionsv2/" class="image-item">
-            <img src="https://i.imgur.com/FFMMvkh.png" alt="UK Sport Champions Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/olymicsv2/" class="image-item">
-            <img src="https://i.imgur.com/dHDZNij.png" alt="Olympics Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/worldcupsandeurosv2/" class="image-item">
-            <img src="https://i.imgur.com/RvJZCcw.png" alt="World Cups and Euros Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/ChildrensTvquizV2/" class="image-item">
-            <img src="https://i.imgur.com/3kHYmTn.png" alt="Children's TV Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/10thingsv2/" class="image-item">
-            <img src="https://i.imgur.com/0ZpYRqa.png" alt="10 Things Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/GeneralKnowledgev5/" class="image-item">
-            <img src="https://i.imgur.com/L7Dc8Li.png" alt="General Knowledge Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/Disneymoviesv3/" class="image-item">
-            <img src="https://i.imgur.com/oVD2GzE.png" alt="Disney Movies Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/famousmoviequotesv3/" class="image-item">
-            <img src="https://i.imgur.com/8CWDdKP.png" alt="Famous Movie Quotes Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/antiheroesv3/" class="image-item">
-            <img src="https://i.imgur.com/N392h4O.png" alt="Antiheroes Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/onehitv3/" class="image-item">
-            <img src="https://i.imgur.com/YHDS1tl.png" alt="One Hit Wonders Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/famouseventsv1/" class="image-item">
-            <img src="https://i.imgur.com/66kZVj7.png" alt="Famous Events Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/nonenglishtv1/" class="image-item">
-            <img src="https://i.imgur.com/6LmVu4P.png" alt="Non-English TV Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/realityTVV2/" class="image-item">
-            <img src="https://i.imgur.com/HDU8HOa.png" alt="Reality TV Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/limited-series/" class="image-item">
-            <img src="https://i.imgur.com/nYrAzFj.png" alt="Limited Series Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/sitcomsquizv2/" class="image-item">
-            <img src="https://i.imgur.com/gqkwTyw.png" alt="Sitcoms Quiz">
-        </a>
-        <a href="https://quizheadsboardgame.github.io/oscarwinnersv4/" class="image-item">
-            <img src="https://i.imgur.com/bTO5PRv.png" alt="Oscar Winners Quiz">
-        </a>
-    </div>
-</body>
-</html>
+/* Make images appear more lifted on hover */
+.image:hover {
+    transform: translateY(-10px); /* Moves the image up slightly to simulate lifting */
+}
 
