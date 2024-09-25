@@ -1,28 +1,45 @@
-/* Make the background transparent */
-body {
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Background with Image Shadows</title>
+    <style>
+        /* Make the background transparent */
+        body {
+            background-color: transparent;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-}
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
 
-/* Style each image to appear lifted with shadow */
-.image {
-    width: 300px;
-    height: auto;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow to create a "lifted" look */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
+        /* Style each image to appear lifted with shadow */
+        .image {
+            width: 300px;
+            height: auto;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow to create a "lifted" look */
+            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+        }
 
-/* Make images appear more lifted on hover */
-.image:hover {
-    transform: translateY(-10px); /* Moves the image up slightly to simulate lifting */
-}
+        /* Make images appear more lifted on hover */
+        .image:hover {
+            transform: translateY(-10px); /* Moves the image up slightly to simulate lifting */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image1.jpg" alt="Image 1" class="image">
+        <img src="image2.jpg" alt="Image 2" class="image">
+        <img src="image3.jpg" alt="Image 3" class="image">
+    </div>
+</body>
+</html>
 
