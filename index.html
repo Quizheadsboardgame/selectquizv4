@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transparent Background with Image Shadows</title>
+    <title>Quiz Links with Images</title>
     <style>
-        /* Make the background transparent */
         body {
             background-color: transparent;
             margin: 0;
@@ -15,30 +14,62 @@
 
         .container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
-            height: 100vh;
+            padding: 20px;
         }
 
-        /* Style each image to appear lifted with shadow */
-        .image {
-            width: 300px;
+        .quiz-item {
+            margin: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .quiz-item img {
+            width: 200px;
             height: auto;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow to create a "lifted" look */
-            transition: transform 0.3s ease; /* Smooth transition for hover effect */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds shadow for the lifted look */
+            border-radius: 8px;
         }
 
-        /* Make images appear more lifted on hover */
-        .image:hover {
-            transform: translateY(-10px); /* Moves the image up slightly to simulate lifting */
+        .quiz-item:hover img {
+            transform: translateY(-10px); /* Lifting effect on hover */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="image1.jpg" alt="Image 1" class="image">
-        <img src="image2.jpg" alt="Image 2" class="image">
-        <img src="image3.jpg" alt="Image 3" class="image">
+        <a href="https://quizheadsboardgame.github.io/Horrorquizv4/" class="quiz-item">
+            <img src="https://i.imgur.com/b5oxAMh.png" alt="Horror Quiz">
+        </a>
+        <a href="https://quizheadsboardgame.github.io/TaylorSwiftQuizv3/" class="quiz-item">
+            <img src="https://i.imgur.com/ioPzU6j.png" alt="Taylor Swift Quiz">
+        </a>
+        <a href="https://quizheadsboardgame.github.io/iconicmoviesv3/" class="quiz-item">
+            <img src="https://i.imgur.com/09bbnYp.png" alt="Iconic Movies Quiz">
+        </a>
+        <a href="https://quizheadsboardgame.github.io/AEWv2/" class="quiz-item">
+            <img src="https://i.imgur.com/gGOAenD.png" alt="AEW Quiz">
+        </a>
+        <a href="https://quizheadsboardgame.github.io/wwequizv2/" class="quiz-item">
+            <img src="https://i.imgur.com/Kxac95Y.png" alt="WWE Quiz">
+        </a>
+        <a href="https://quizheadsboardgame.github.io/georgemichealv2/" class="quiz-item">
+            <img src="https://i.imgur.com/Ba0wMT8.png" alt="George Michael Quiz">
+        </a>
+        <a href="https://quizheadsboardgame.github.io/transformersquizv2/" class="quiz-item">
+            <img src="https://i.imgur.com/XhwUpeq.png" alt="Transformers Quiz">
+        </a>
+        <a href="https://quizheadsboardgame.github.io/HarryPotterv2/" class="quiz-item">
+            <img src="https://i.imgur.com/J3OIvZt.png" alt="Harry Potter Quiz">
+        </a>
+        <a href="https://quizheadsboardgame.github.io/ClassicHollywoodMoviesv2/" class="quiz-item">
+            <img src="https://i.imgur.com/nOaemXZ.png" alt="Classic Hollywood Movies Quiz">
+        </a>
+        <a href="https://quizheadsboardgame.github.io/StarWarsQuizv4/" class="quiz-item">
+            <img src="https://i.imgur.com/ncuuRyP.png" alt="Star Wars Quiz">
+        </a>
+        <!-- Continue adding the other images and links in the same format -->
     </div>
 </body>
 </html>
